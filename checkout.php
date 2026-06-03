@@ -4,7 +4,7 @@ error_reporting(error_level: 0);
 include "db.php";
 
 $user_id=$_SESSION['user_id'];
-
+ 
 $sql1="select count(*) as total from carts where user_id='$user_id' ";
 $result1=mysqli_query($conn,$sql1);
 // total
